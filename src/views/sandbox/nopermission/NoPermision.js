@@ -3,7 +3,10 @@ import React from 'react'
 export default function NoPermision() {
   return (
     <div>
-      403no
+      <h1>
+      403 no permision
+
+      </h1>
     </div>
   )
 }

@@ -5,7 +5,7 @@ import ReactDOM from 'react-dom/client'; //v17和v18的写法不同
 import './index.css';
 import App from './App';
 // import reportWebVitals from './reportWebVitals';
-
+import './App.css'
 const root = ReactDOM.createRoot(document.getElementById('root'));
 // render(<App />, root)
 root.render(

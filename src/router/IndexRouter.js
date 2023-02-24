@@ -7,7 +7,7 @@ export default function IndexRouter() {
     <HashRouter>
       <Routes>
         <Route path="/login" element={<Login></Login>} />
-        <Route path="/" element={<NewsSandBox></NewsSandBox>}/>
+        <Route path="/*" element={<NewsSandBox></NewsSandBox>}/>
         {/* <Route path="/" render={() => 
           localStorage.getItem("token")?
         <NewsSandBox></NewsSandBox>:
