@@ -1,5 +1,5 @@
 import React from "react";
-import { Route, Switch } from "react-router-dom";
+import { Route, Switch,Redirect } from "react-router-dom";
 import SideMenu from "../../components/sandbox/SideMenu";
 import TopHeader from "../../components/sandbox/TopHeader";
 import RightList from "./role-manage/RightList";
@@ -13,12 +13,14 @@ export default function NewsSandBox() {
       <SideMenu></SideMenu>
       <TopHeader></TopHeader>
 
-      {/* 页面主体部分，通过路由进行切换 */}
+      {/* 页面主体部分，通过路由进行切换
+      Switch 精确匹配，匹配到即停止，没有机会到redirect */}
       <Switch>
         <Route path="/home" component={Home}></Route>
         <Route path="/user-manage/list" component={UserList}></Route>
         <Route path="/right-manage/role/list" component={RoleList}></Route>
         <Route path="/right-manage/right/list" component={RightList}></Route>
+        <Redirect></Redirect>
       </Switch>
     </div>
   );
